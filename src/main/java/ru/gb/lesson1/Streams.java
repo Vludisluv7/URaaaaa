@@ -2,7 +2,6 @@ package ru.gb.lesson1;
 
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
-import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -83,7 +82,7 @@ public class Streams {
     private String name;
     private int age;
     private double salary;
-    private Department department;
+    private static Department department;
 
     public Person(String name, int age, double salary, Department department) {
       this.name = name;
@@ -149,6 +148,6 @@ public class Streams {
         "name='" + name + '\'' +
         '}';
     }
-  }
 
-}
+
+}}
